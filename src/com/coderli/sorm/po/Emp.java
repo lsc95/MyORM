@@ -1,7 +1,5 @@
 package com.coderli.sorm.po;
 
-import java.sql.*;
-import java.util.*;
 
 public class Emp {
 
@@ -56,4 +54,10 @@ public class Emp {
 	public void setAge(Integer age){
 		this.age=age;
 	}
+	@Override
+	public String toString() {
+		return "Emp [empname=" + empname + ", birthday=" + birthday + ", bonus=" + bonus + ", deptid=" + deptid
+				+ ", id=" + id + ", salary=" + salary + ", age=" + age + "]\n";
+	}
+	
 }

@@ -35,6 +35,18 @@ public class Configuration {
 	 * 扫描生成java类的包
 	 */
 	private String poPackage;
+	/**
+	 * 项目使用查询类的路劲
+	 */
+	private String queryClass;
+	/**
+	 * 连接池中最小连接数
+	 */
+	private int poolMinSize;
+	/**
+	 * 连接池中最大连接数
+	 */
+	private int poolMaxSize;
 
 	public Configuration() {
 		// TODO Auto-generated constructor stub
@@ -50,6 +62,30 @@ public class Configuration {
 		this.usingDb = usingDb;
 		this.srcPath = srcPath;
 		this.poPackage = poPackage;
+	}
+
+	public int getPoolMinSize() {
+		return poolMinSize;
+	}
+
+	public void setPoolMinSize(int poolMinSize) {
+		this.poolMinSize = poolMinSize;
+	}
+
+	public int getPoolMaxSize() {
+		return poolMaxSize;
+	}
+
+	public void setPoolMaxSize(int poolMaxSize) {
+		this.poolMaxSize = poolMaxSize;
+	}
+
+	public String getQueryClass() {
+		return queryClass;
+	}
+
+	public void setQueryClass(String queryClass) {
+		this.queryClass = queryClass;
 	}
 
 	public String getDriver() {
